@@ -12,10 +12,10 @@
                 <table CLASS="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Id</th>
-                            <th>Title</th>
+                            <th>Post Id</th>
+                            <th>Title Post</th>
                             <th>Author</th>
-                           <!-- <th>Hình ảnh</th> -->
+                            <th>Image</th>
                             <th>Slug</th>
                         </tr>
                     </thead>
@@ -24,11 +24,7 @@
                             <td>{{$post->post_id}}</td>
                             <td>{{$post->post_name}}</td>
                             <td>{{$post->authorId}}</td>
-                            <!--
-                            <td>
-                                <img src="{{$post->post_image}}" alt="Image" class="img-thumbnail">
-                            </td>
-                        -->
+                            <td><img src="{{$post->post_image}}" alt="Image" class="img-thumbnail"></td>
                             <td>{{$post->post_slug}}</td>
                         </tr>
                     @endforeach
