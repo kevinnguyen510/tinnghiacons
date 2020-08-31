@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
+    //Get all post
     public function all_post() {
         $posts = DB::table('post')->get();
 
@@ -14,7 +15,7 @@ class PostController extends Controller
             'posts' => $posts
         ]);
     }
-
+    //Add new post
     public function add_post() {
         $categories = DB::table('category')->get();
         return view('admin.add_post')->with(['categories'=>$categories]);
@@ -34,5 +35,10 @@ class PostController extends Controller
             'post_content' => $content
         ]);
         return redirect('all_post');
+    }
+    //Delete post
+    public function delete_post($id) {
+        $b = DB::table('post') ->where('post_id', intval($id))->delete();
+        return redirect() -> action('PostController@index');
     }
 }

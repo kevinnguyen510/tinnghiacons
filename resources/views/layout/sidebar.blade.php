@@ -2,7 +2,7 @@
 <ul CLASS="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a CLASS="sidebar-brand d-flex align-items-center justify-content-center" href="{{URL::to('/')}}">
+    <a CLASS="sidebar-brand d-flex align-items-center justify-content-center" href="{{URL::to('/home')}}">
       <div CLASS="sidebar-brand-icon rotate-n-15">
         <i CLASS="fas fa-laugh-wink"></i>
       </div>

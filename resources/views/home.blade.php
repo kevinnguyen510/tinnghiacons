@@ -8,7 +8,7 @@
           <h6 CLASS="m-0 font-weight-bold text-primary">Welcome Back!</h6>
         </div>
             <div CLASS="card-body">
-              <h3><?=Auth::user()->name?></h3>
+              <h3>Say hi,<?=Auth::user()->name?></h3>
             </div>
     </div>
 
